@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>IEEE And Data Engineer WorkShop</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+
+        .background {
+            background: rgb(243, 158, 55);
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 180px;
+            border-radius: 50px;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .nav-list li a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 9px;
+        }
+
+        .firstsection {
+            background-color: rgb(86, 131, 245);
+            height: 400px;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .secondhalf {
+            width: 30%;
+            background-color: rgb(230, 85, 119);
+        }
+
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid rgb(255, 255, 255);
+
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        .text-big1 {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+            color: aliceblue;
+        }
+
+        .text-big2 {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+
+        .text-small1 {
+            font-size: 18px;
+            color: aliceblue;
+        }
+
+        .text-small2 {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+        }
+
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+
+        .paras {
+            padding: 0px 65px;
+        }
+
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid rgb(27, 29, 29);
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="ieee.png">
+            </div>
+            <li><a href="#web">Cloud Computing</a></li>
+            <li><a href="#program">Data Engineering</a></li>
+            <li><a href="#course">Other Courses</a></li>
+        </ul>
+
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big1" id="web">Cloud computing services</h1>
+                <p class="text-small1">
+                    Simply put, cloud computing is the delivery of computing services—including servers, storage,
+                    databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to
+                    offer faster innovation, flexible resources, and economies of scale. You typically pay only for
+                    cloud services you use, helping you lower your operating costs, run your infrastructure more
+                    efficiently, and scale as your business needs change.
+                </p>
+                <div class="thumbnail center">
+                    <img src="cloud.png" alt=>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big2" id="program">Data Engineer</h1>
+
+            <p class="sectionSubTag text-small2">
+                Data engineers work in a variety of settings to build systems that collect, manage, and convert raw data
+                into usable information for data scientists and business analysts to interpret. Their ultimate goal is
+                to make data accessible so that organizations can use it to evaluate and optimize their performance.
+            </p>
+
+        </div>
+
+        <div class="thumbnail">
+            <img src="data.png" alt=>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer" style="color: black;">Created By Sanket Karanade</p>
+
+    </footer>
+</body>
+
+</html>
